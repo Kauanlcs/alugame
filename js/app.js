@@ -6,6 +6,10 @@ function alterarStatus(id) {
     if (jaalugado) {
         capa.classList.remove("dashboard__item__img--rented");
         botao.classList.remove("dashboard__item__button--rented");
-        botao.textContent = "Alugiar";
+        botao.textContent = "Alugar";
+    } else {
+        capa.classList.add("dashboard__item__img--rented");
+        botao.classList.add("dashboard__item__button--rented");
+        botao.textContent = "Devolver";
     }
 }
