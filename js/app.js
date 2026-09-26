@@ -5,11 +5,11 @@ function alterarStatus(id) {
     let jaalugado = capa.classList.contains("dashboard__item__img--rented");
     if (jaalugado) {
         capa.classList.remove("dashboard__item__img--rented");
-        botao.classList.remove("dashboard__item__button--rented");
+        botao.classList.remove("dashboard__item__button--return");
         botao.textContent = "Alugar";
-    } else {
+      } else {
         capa.classList.add("dashboard__item__img--rented");
-        botao.classList.add("dashboard__item__button--rented");
+        botao.classList.add("dashboard__item__button--return");
         botao.textContent = "Devolver";
     }
 }
